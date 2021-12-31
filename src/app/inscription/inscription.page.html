@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Inscription</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <form [formGroup]="inscriptionForm" (ngSubmit)="signUp()">
+  <ion-item>
+  <ion-label>Nom</ion-label>
+  <ion-input formControlName='nom' type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label>Prenom</ion-label>
+  <ion-input formControlName='prenom' type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label>Email</ion-label>
+  <ion-input formControlName='email' type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label>Tel</ion-label>
+  <ion-input formControlName='tel' type="Tel"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label> Password</ion-label>
+  <ion-input formControlName='password' type="Password"></ion-input>
+  </ion-item>
+  <ion-button expand="block" type="submit" fill="outline">Envoyer</ion-button>
+</form>
+  </ion-content>
